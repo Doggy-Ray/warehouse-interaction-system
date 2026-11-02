@@ -1,0 +1,67 @@
+{
+  "label": "标准化情景演示，条件为明确设定",
+  "scope": {
+    "single_task": true,
+    "two_hands": true,
+    "standing": true,
+    "stable_load": true,
+    "unrestricted_space": true,
+    "carry_distance_m": 0.15,
+    "lift_motion_seconds": 2,
+    "temperature_c": 20,
+    "relative_humidity_pct": 40,
+    "shoe_floor_static_friction": 0.5,
+    "no_push_pull_climb_or_other_work": true,
+    "smooth_controlled_motion": true,
+    "recovery_is_rest": true,
+    "one_bout_only": true,
+    "field_verified": false
+  },
+  "scope_explanation": "仅一个纯提举工作段，频率为代表性15分钟内的设定频率，整个工作段保持不变；随后同长时间完全休息，无推车、行走或其他劳动。双手、站姿、稳定载荷、空间充足、短移位0.15m、平稳动作；抓握等级沿用已核验例题；20°C、40%相对湿度、鞋地静摩擦系数0.5均为演示设定。不是仓库现场测量或适用性认证。",
+  "cases": [
+    {
+      "id": "LI_DEMO_1",
+      "title": "例题几何 A · 终点显著控制",
+      "reference": "仓储风险分析/reports/official_example_checks.json 第1例；手册印刷页34",
+      "event": {
+        "origin_h_m": 0.5842,
+        "origin_v_m": 0.381,
+        "origin_a_deg": 0,
+        "destination_h_m": 0.5842,
+        "destination_v_m": 1.6002,
+        "destination_a_deg": 0,
+        "vertical_travel_m": 1.2192,
+        "coupling_class": "fair",
+        "destination_control_required": true,
+        "load_mass_kg": 19.958064280000002
+      },
+      "frequency_per_min": 0.2,
+      "work_minutes": 30,
+      "recovery_minutes": 30,
+      "reference_metric_rwl_kg": 6.282934299243599,
+      "reference_metric_li": 3.176551485251525
+    },
+    {
+      "id": "LI_DEMO_3",
+      "title": "例题几何 B · 起点控制 / 45°不对称",
+      "reference": "仓储风险分析/reports/official_example_checks.json 第3例；手册印刷页42",
+      "event": {
+        "origin_h_m": 0.4572,
+        "origin_v_m": 0.381,
+        "origin_a_deg": 45,
+        "destination_h_m": 0.254,
+        "destination_v_m": 0.9144,
+        "destination_a_deg": 45,
+        "vertical_travel_m": 0.5334,
+        "coupling_class": "fair",
+        "destination_control_required": false,
+        "load_mass_kg": 18.143694800000002
+      },
+      "frequency_per_min": 0.2,
+      "work_minutes": 30,
+      "recovery_minutes": 30,
+      "reference_metric_rwl_kg": 8.225281490213822,
+      "reference_metric_li": 2.205844848177755
+    }
+  ]
+}
