@@ -1,3 +1,13 @@
+## 下载完整体验包
+
+请前往 [Releases 下载精简整合包 v1.3](https://github.com/Doggy-Ray/warehouse-interaction-system/releases/tag/v1.3-compact)，选择 **warehouse-lab-compact-v1.3.zip**（445.65 MB），并按包内 `distribution/使用说明.md` 安装和启动。
+
+**不要用仓库的 Code → Download ZIP 或自动生成的 Source code ZIP 替代整合包**：这些仅含仓库源码，不含完整配套数据。首次安装需要 Windows 64位 Python 3.12、Python Launcher 和联网下载依赖；启动后访问本机 http://127.0.0.1:8765/。
+
+整合包保留完整正式事件与当前支持的方案，27项回归和29张还原表核验通过。DeepSeek实时生成需自备密钥并明确授权；密钥不随包提供。
+
+---
+
 # 仓储拣选设计实验室 · 给大家的体验指南
 
 因为做的内容是给实际仓储场景的，所以有不少术语、缩写，为了方便大家了解体验，给大家准备了体验说明
